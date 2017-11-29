@@ -14,9 +14,15 @@ namespace GitTestManager
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GitTestManagerForm());
+            // Application.EnableVisualStyles();
+            // Application.SetCompatibleTextRenderingDefault(false);
+            // Application.Run(new GitTestManagerForm());
+
+            HttpTest.checkHttpRequest();
+
+
+            Console.Out.WriteLine("Pulse una tecla para salir");
+            Console.In.ReadLine();
         }
     }
 }
